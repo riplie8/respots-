@@ -5,15 +5,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styling.css">
-<link rel="icon" href="insert-icon" type="image/x-icon">
+<link rel="icon" href="reicon.png" type="image/x-icon">
 
 </head>
 <body>
 
 <div class="topnav">
-  
-  <a href="Service_Projekt.html"><button class="button button1">English</button></a>
-  <a href="russian.html"><button class="button button2">Russian</button></a>
+  <a href="english.html"> <img class="pic" src="reicon.png" alt=""></a>
+  <a class="topn" href="english.html"><button class="button button1">English</button></a>
+  <a class="topn "href="russian.html"><button class="button button2">Russian</button></a>
 </div>
 
 <div class="content">
@@ -23,10 +23,58 @@
 </div>
 
 <div class="footer">
+
+  
  
   <h3 class="welcome" align="center ">Welcome to Respots! Here you can find every recycling center in Nur-Sultan! </h3>
+  <h2><br> <br></h2>
+ 
+<button class="button" id="myBtn">Astana Clean Time</button>
+
+
+<div id="myModal" class="modal">
+
+ 
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1 align="center">Astana Clean Time </h1>
+    <h3 align="center">Monday: - <br> Tuesday-Sunday: 09:30-19:00</h3>
+    <h4 align="center">Contact: +7 701 351 37 00</h4>
+    <h4 align="center">Adresses: <br> These links will go to 2gis.</h4>
+    <a class="links" target="_blank" href="https://go.2gis.com/yrvsuu">Turkestan 30</a>
+    
+  </div>
+
+</div>
+
   
 </div>
 
+<script>
+  
+  var modal = document.getElementById("myModal");
+  
+  
+  var btn = document.getElementById("myBtn");
+  
+  
+  var span = document.getElementsByClassName("close")[0];
+  
+  
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+ 
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 </body>
 </html>
